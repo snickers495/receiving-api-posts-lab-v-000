@@ -22,11 +22,11 @@
 
       var values = $(this).serialize();
 
-      var posting = $.post('/products', values);
+      var posting = $.post('/product', values);
 
       posting.done(function(data) {
         var post = data;
-        $("#postTitle").text(post["title"]);
+        $("#prod").text(post["title"]);
         $("#postBody").text(post["description"]);
       });
     });
