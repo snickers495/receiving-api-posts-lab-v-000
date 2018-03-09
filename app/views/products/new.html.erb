@@ -27,7 +27,7 @@
       posting.done(function(data) {
         var product = data;
         $("#prod").text(product["name"]);
-        $("#postBody").text(product["description"]);
+        $("#postBody").text(product["price"]);
       });
     });
   });
