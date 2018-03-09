@@ -34,9 +34,9 @@
       posting.done(function(data) {
         var product = data;
         $("#productName").text(product["name"]);
-        $("#productName").text(product["price"]);
+        $("#productPr").text(product["price"]);
         $("#productName").text(product["description"]);
-        $("#postBody").text(product["inventory"]);
+        $("#productName").text(product["inventory"]);
       });
     });
   });
